@@ -19,4 +19,4 @@ URxvt.color15: #%COLOR_WHITE%
 
 URxvt.foreground: 15
 URxvt.background: 0
-URxvt.internalBorder: 4
+URxvt.internalBorder: 8
