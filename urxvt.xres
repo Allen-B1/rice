@@ -1,0 +1,22 @@
+URxvt.font: -xos4-terminesspowerline-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.scrollBar: false
+URxvt.color0: #%COLOR_BLACK%
+URxvt.color1: #%COLOR_RED%
+URxvt.color2: #%COLOR_GREEN%
+URxvt.color3: #%COLOR_YELLOW%
+URxvt.color4: #%COLOR_BLUE%
+URxvt.color5: #%COLOR_PURPLE%
+URxvt.color6: #%COLOR_TEAL%
+URxvt.color7: #%COLOR_GRAY%
+URxvt.color8: #%COLOR_BLACK_L%
+URxvt.color9: #%COLOR_RED_L%
+URxvt.color10: #%COLOR_GREEN_L%
+URxvt.color11: #%COLOR_YELLOW_L%
+URxvt.color12: #%COLOR_BLUE_L%
+URxvt.color13: #%COLOR_PURPLE_L%
+URxvt.color14: #%COLOR_TEAL_L%
+URxvt.color15: #%COLOR_WHITE%
+
+URxvt.foreground: 15
+URxvt.background: 0
+URxvt.internalBorder: 4
