@@ -20,3 +20,4 @@ xset fp rehash
 
 fish "$RICEDIR/out/lemonbar.fish" | lemonbar -f "-xos4-terminesspowerline-medium-r-normal--12-120-72-72-c-60-iso10646-1" -B "#%COLOR_BLACK_L%" &
 xrdb "$RICEDIR/out/urxvt.xres"
+feh --bg-fill "$RICEDIR/wallpapers/nitw.jpg"
