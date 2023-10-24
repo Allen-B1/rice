@@ -26,10 +26,16 @@ function lbar_desktops
 end
 fish -c '
 	bspc subscribe desktop &
+	fish -c \'
+		while true
+			printf "LBAR_WIFI %s\n" (iwgetid -r)
+			sleep 1
+		end
+	\' &
 	begin
 		while true 
-			printf "LBAR_DATE %s\n" (date +%H:%M)
-			sleep 30
+			printf "LBAR_TIME %s\n" (date +%H:%M)
+			sleep 10
 		end
 	end 
 ' | while true
@@ -41,5 +47,5 @@ fish -c '
 		set $PARTS[1] $PARTS[2..-1]
 	end
 
-	printf "%%{l}%s%%{c}%%{F#fff}%s%%{r}%%{B#%s} %s %%{B#%s}\n" (lbar_desktops) $LBAR_DATE $COLOR_2 ":)" $COLOR_0
+	printf "%%{l}%s%%{c}%%{F#fff}%s%%{r}%%{F#%s}$ARROW_LEFT%%{B#%s}%%{F#fff} %s %%{B#%s}\n" (lbar_desktops | string collect) "$LBAR_TIME" $COLOR_2 $COLOR_2 "$LBAR_WIFI" $COLOR_0
 end
