@@ -1,4 +1,4 @@
-URxvt.font: -xos4-terminesspowerline-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.font: xft:Roboto Mono for Powerline:pixelsize=12
 URxvt.scrollBar: false
 URxvt.color0: #%COLOR_BLACK%
 URxvt.color1: #%COLOR_RED%
@@ -19,4 +19,4 @@ URxvt.color15: #%COLOR_WHITE%
 
 URxvt.foreground: 15
 URxvt.background: 0
-URxvt.internalBorder: 8
+URxvt.internalBorder: 16
