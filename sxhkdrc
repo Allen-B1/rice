@@ -1,6 +1,8 @@
 #
 # wm independent hotkeys
 #
+shift + alt + k
+	fish -c "sleep 0.1 && xdotool click 3"
 
 # terminal emulator
 super + Return

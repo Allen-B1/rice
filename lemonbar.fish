@@ -4,7 +4,8 @@ set ARROW_RIGHT ""
 set COLOR_0 %COLOR_BLACK_L% 
 set COLOR_1 %COLOR_PURPLE_L%
 set COLOR_1D %COLOR_PURPLE%
-set COLOR_2 %COLOR_GREEN%
+set COLOR_2 %COLOR_YELLOW%
+set COLOR_BAT %COLOR_TEAL%
 
 set LBAR_DESKTOPS (bspc query -D --names)
 set LBAR_ACTIVE (bspc query -D -d focused --names)
@@ -47,5 +48,6 @@ fish -c '
 		set $PARTS[1] $PARTS[2..-1]
 	end
 
-	printf "%%{l}%s%%{c}%%{F#fff}%s%%{r}%%{F#%s}$ARROW_LEFT%%{B#%s}%%{F#fff} %s %%{B#%s}\n" (lbar_desktops | string collect) "$LBAR_TIME" $COLOR_2 $COLOR_2 "$LBAR_WIFI" $COLOR_0
+	printf "%%{l}%s%%{c}%%{F#fff}%s%%{r}%%{F#%s}$ARROW_LEFT%%{B#%s}%%{F#fff} %s %%{F#%s}$ARROW_LEFT%%{B#%s}%%{F#fff} %s%% %%{B#%s}\n" (lbar_desktops | string collect) "$LBAR_TIME" $COLOR_2 $COLOR_2 "$LBAR_WIFI" \
+		"$COLOR_BAT" "$COLOR_BAT" (cat /sys/class/power_supply/BAT0/capacity) $COLOR_0
 end
