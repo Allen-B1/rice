@@ -20,3 +20,6 @@ URxvt.color15: #%COLOR_WHITE%
 URxvt.foreground: 15
 URxvt.background: 0
 URxvt.internalBorder: 16
+
+URxvt.keysym.Meta-k: command:\033]720;1\007
+URxvt.keysym.Meta-j: command:\033]721;1\007

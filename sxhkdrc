@@ -128,3 +128,9 @@ super + {Left,Down,Up,Right}
 
 Print
 	xfce4-screenshooter -r
+
+# brightness
+F4
+	brightnessctl s 10-
+F5
+	brightnessctl s +10
